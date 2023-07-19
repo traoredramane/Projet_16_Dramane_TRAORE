@@ -92,8 +92,8 @@
 //     console.log("false !");
 // } 
 
-let x = 5;
-let y = "5";
+// let x = 5;
+// let y = "5";
 
 // if (x === y ||  x > 3) {
 //     console.log("True !");
@@ -101,8 +101,89 @@ let y = "5";
 //     console.log("false !");
 // }
 
-if (x == y && x >3 && y <10) {
-    console.log("True !");
-}else {
-    console.log("false !");
+// if (x == y && x >3 && y <10) {
+//     console.log("True !");
+// }else {
+//     console.log("false !");
+// }
+
+// // let x = 6
+// let x = 5
+// let y = "5"
+// x == y ? console.log("True !") : console.log("false");;
+// // if (x == y) console.log("True !"); 
+    
+// }else if (x == y) {
+//     console.log("x et y egaux en valeur");
+// } else {
+//     // console.log("x et y ne sont pas tout égaux");
+//     console.log(x + " et " + y + "ne sont pas du tout égaux" );
+//     console.log('${x} et ${y} ne sont pas du tout égaux');
+    
+// }
+
+
+// function faireQuelqueChose() {
+//     console.log("Je fait un truc !");
+//    console.log("Trop cool"); 
+// }
+// faireQuelqueChose()
+
+// const faireUneTache = (tache) => {
+//     console.log("Je fais : " + tache);
+// }
+
+// faireUneTache("Les courses")
+// faireUneTache("le menage")
+// function add2() {
+// //    return x + y;
+// let a = 4
+// console.log(a);
+// return a + 2;
+// }
+// add2();
+
+// // calc(4, 9)
+// (function maFonction() {
+//     console.log("Je ne joue toute seule");
+// })();
+
+// (() => {
+//     console.log("Je ne joue aussi toute seule");
+// })(); 
+
+let total = 0;
+
+function addition(x) {
+    total += x;
+    return total;
+}
+
+
+function soustraction(x) {
+    total -= x;
+    return total;
+}
+
+
+function division(x) {
+    if (total === 0) {
+        return (total = x)
+    } else {  
+    total /= x;
+    return total;
+    }
+}
+
+function multiplication(x) {
+    if (total === 0) {
+        return (total = x)
+    } else {  
+    total *= x;
+    return total;
+    }
+}
+
+function reset() {
+    total = 0;
 }
